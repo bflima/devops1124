@@ -15,6 +15,12 @@ config.vm.define "controle" do |controle|
         ansible.playbook = "playbook.yaml"
         ansible.install_mode = "pip"
         end
+        
+#        controle.vm.provision "ansible_local" do |ansible|
+#        ansible.playbook = "installdocker.yaml"
+#        ansible.install_mode = "pip"
+#        end
+
     end
 
         config.vm.define "web" do |web|
